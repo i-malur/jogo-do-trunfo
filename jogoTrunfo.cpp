@@ -63,7 +63,7 @@ public:
     }
 };
 
-int main() {
+main() {
 
     // srand: serve para inicializar a função rand()
     srand(time(0)); 
@@ -135,6 +135,5 @@ int main() {
         printf("O jogo terminou empatado!\n");
 
     system("pause");
-    return 0;
 }
 
