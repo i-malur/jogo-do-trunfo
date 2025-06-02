@@ -126,10 +126,10 @@ Ganhar o maior número de rodadas possíveis, escolhendo o melhor atributo da su
 
 ---
 
-## ✍️ Autor
+## ✍️ Autoria
 
 Desenvolvido por **Maria Luiza** 🖥️  
-Matéria: Linguagem de Programação
+Matéria: Linguagem de Programação  
 Foco: desenvolvimento de jogos simples, lógicos e didáticos em C++
 
 ---
