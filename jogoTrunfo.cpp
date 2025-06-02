@@ -1,8 +1,8 @@
-#include <iostream>
-#include <cstdlib>
-#include <ctime>
-#include <windows.h> // Sleep
-#include <cstring>
+#include <iostream>    // Para entrada e saída (cin, cout, printf)
+#include <cstdlib>     // Para rand(), srand()
+#include <ctime>       // Para time() (gerar números aleatórios diferentes)
+#include <windows.h>   // Para Sleep() e system("pause")
+#include <cstring>     // Para manipulação de strings (fgets, strcspn)
 
 using namespace std;
 
