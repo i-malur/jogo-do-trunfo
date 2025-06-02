@@ -26,6 +26,7 @@ public:
         printf("+-------------------+\n");
     }
 
+    //retorna o valor do atributo escolhido
     int getAtributo(int opcao) {
         switch (opcao) {
             case 1: return forca;
@@ -36,6 +37,7 @@ public:
         }
     }
 
+    //retorna o nome do atributo escolhido
     const char* nomeAtributo(int opcao) {
         switch (opcao) {
             case 1: return "Forca";
@@ -55,21 +57,23 @@ public:
     Jogador() {
         pontuacao = 0;
         for (int i = 0; i < 5; i++) {
-            Sleep(100);
-            monteCarta[i] = Carta();
+            Sleep(100); // pausa para variação de números
+            monteCarta[i] = Carta(); // cria carta com valores aleatórios
         }
     }
 };
 
 int main() {
-    srand(time(0));
+
+    // srand: serve para inicializar a função rand()
+    srand(time(0)); 
     char nomeJogador[50];
 
-    system("chcp 65001 > nul"); // Tenta ajustar para UTF-8 (nem sempre funciona no Dev C++)
-
     printf("Digite seu nome: ");
+
+    // fgets() serve para ler uma linha de texto (string) digitada pelo usuário — até um limite de caracteres — e guardar na variável.
     fgets(nomeJogador, 50, stdin);
-    nomeJogador[strcspn(nomeJogador, "\n")] = '\0'; // Remove \n
+    nomeJogador[strcspn(nomeJogador, "\n")] = '\0'; //fgets() também lê o \n, então às vezes a string fica com uma quebra de linha no final. Por isso usamos = '\0'
 
     printf("\n+------------------------------------------+\n");
     printf("| BEM-VINDO AO SUPER TRUNFO, %s! |\n", nomeJogador);
